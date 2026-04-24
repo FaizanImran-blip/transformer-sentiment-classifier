@@ -1,17 +1,17 @@
 # 🚀 BERT Sentiment Analysis Pipeline
 
-An end-to-end **sentiment analysis pipeline** built using **BERT** and PyTorch.
-This project processes raw tweet data and classifies sentiment using pretrained embeddings and a custom neural network.
+This project is a simple **end-to-end sentiment analysis pipeline** built using BERT and PyTorch.
+The goal was to take raw tweet data, clean it, convert it into embeddings using a pretrained model, and then classify sentiment using a custom neural network.
 
 ---
 
 ## 📌 Features
 
-* Text preprocessing (cleaning tweets)
+* Basic text preprocessing (cleaning tweets)
 * Tokenization using BERT tokenizer
-* Embedding extraction via pretrained BERT
-* Custom classification model (PyTorch)
-* Training & inference pipeline
+* Embedding extraction using pretrained BERT
+* Simple classification layer (PyTorch)
+* Full pipeline from data → training → prediction
 
 ---
 
@@ -19,7 +19,7 @@ This project processes raw tweet data and classifies sentiment using pretrained 
 
 * Python
 * PyTorch
-* Transformers (HuggingFace)
+* HuggingFace Transformers
 * Pandas
 
 ---
@@ -44,34 +44,31 @@ python main.py
 
 ## 📊 Dataset
 
-Tweet sentiment dataset from Kaggle:
+I used the tweet sentiment dataset from Kaggle:
 https://www.kaggle.com/datasets/krishbaisoya/tweets-sentiment-analysis
 
 ---
 
 ## 🧠 Model Overview
 
-* Uses pretrained BERT to generate embeddings
-* Applies a simple linear classifier on CLS token
-* Supports binary sentiment classification (Negative / Positive)
+* BERT is used to generate embeddings from text
+* The CLS token is taken as representation
+* A simple linear layer is used for classification
+* Currently supports binary sentiment (Negative / Positive)
 
 ---
 
 ## ⚠️ Note
 
-For faster training, reduce dataset size or use GPU.
-Full dataset (~1.5M samples) can be slow on local machines.
+The full dataset is quite large (~1.5M rows), so training can be slow on a local machine.
+For testing, it's better to use a smaller sample or run on a GPU.
 
 ---
 
 ## 📈 Future Improvements
 
-* Fine-tune BERT end-to-end
-* Add evaluation metrics (F1-score, confusion matrix)
-* Optimize training speed
+* Fine-tune BERT instead of using frozen embeddings
+* Add proper evaluation metrics (F1-score, confusion matrix)
+* Improve training efficiency
 
----
 
-## 👨‍💻 Author
-
-Faizan Imran
