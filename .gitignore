@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Torch models / tensors
+*.pt
+
+
+*.csv
+
+# Mac
+.DS_Store
+
+
+venv/
+.env/
