@@ -3,7 +3,7 @@
 This project is a simple **end-to-end sentiment analysis pipeline** built using BERT and PyTorch.
 The goal was to take raw tweet data, clean it, convert it into embeddings using a pretrained model, and then classify sentiment using a custom neural network.
 
----
+--
 
 ## 📌 Features
 
